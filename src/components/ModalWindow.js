@@ -60,7 +60,7 @@ function ModalWindow(props) {
                                 </div>
                                 <div className="comments">
                                     {
-                                        photos.comments.map(item => {
+                                        photos.comments && photos.comments.map(item => {
                                             return (
                                                 <div key={item.id}>
                                                     <p>{item.text}</p>
